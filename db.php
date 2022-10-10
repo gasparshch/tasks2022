@@ -3,7 +3,8 @@
 function getTasks() {
 
     // me conecto a la base de datos, abro conexión
-    $db = new PDO('mysql:host=localhost;'.'dbname=db_tasks2022;charset=utf8', 'root', '');
+    $db = new PDO('mysql:host=localhost;'.'dbname=db_tasks2022;
+    charset=utf8', 'root', '');
 
     // preparo la sentencia para devolver el resultado
     $sentencia = $db->prepare("select * from tareas");
